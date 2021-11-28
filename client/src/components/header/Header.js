@@ -12,9 +12,6 @@ export default function Header() {
             <div>
                 <NavBar/>
             </div>
-            <div style={{marginTop:'5px'}}>
-                    
-            </div>
         </div>
     )
 }

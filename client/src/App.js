@@ -1,10 +1,9 @@
 
 import './App.css';
-import Header from './components/header/Header'
-
+import Loading from'./views/loading/Loading'
 function App() {
   return (
-    <Header/>
+    <Loading/>
   );
 }
 

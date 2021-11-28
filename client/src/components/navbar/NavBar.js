@@ -5,13 +5,15 @@ export default function NavBar() {
     return (
         <div>
             <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                <Navbar.Brand href="#home">
+                    <img src="https://360boutique.vn/wp-content/uploads/2021/10/LOGO-360-DUNG-TAM-THOI-MAU-DEN-05.png" alt="" width="60" height="50" />
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
-                        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                        <Nav.Link href="#home">Trang chủ</Nav.Link>
+                        <Nav.Link href="#link">Sản phẩm</Nav.Link>
+                        <NavDropdown title="Danh mục" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
@@ -19,9 +21,11 @@ export default function NavBar() {
                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
-                        <Form inline>
-                            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                            <Button variant="outline-success">Search</Button>
+                        <Form inline className="d-flex">
+                            <FormControl type="text" placeholder="Tìm kiếm sản phẩm..." className="mr-sm-2" />
+                            <Button variant="outline-success">
+                                <i className="fas fa-search"></i>
+                            </Button>
                         </Form>
                 </Navbar.Collapse>
             </Navbar>
