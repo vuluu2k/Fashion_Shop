@@ -9,11 +9,11 @@ export default function ContactFooter() {
                 <span className="ml-1">Đăng kí nhận tin</span>
             </div>
             <div>
-                <Form className="d-flex"> 
-                    <Form.Group controlId="formBasicEmail">
+                <Form className="d-flex align-items-center"> 
+                    <Form.Group className="d-flex align-items-center" style={{marginBottom:0}} controlId="formBasicEmail">
                         <Form.Control type="email" placeholder="Nhập email của bạn" />
                     </Form.Group>
-                    <Button className="ml-2" variant="dark" type="submit">
+                    <Button className="ml-2" variant="dark">
                         Đăng kí
                     </Button>
                 </Form>

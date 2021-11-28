@@ -3,7 +3,7 @@ import {Carousel} from 'react-bootstrap'
 export default function CarouselCustom() {
     return (
         <div>
-            <Carousel nextLabel="" prevLabel=" " interval="4000">
+            <Carousel interval={4000}>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"

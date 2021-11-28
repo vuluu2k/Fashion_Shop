@@ -3,6 +3,8 @@ import Carousel from '../../components/carousel/CarouselCustom'
 import CardContainer from '../../components/card/CardContainer'
 
 export default function HomePage() {
+    const btn=document.querySelector('button[aria-label="team1"]')
+    console.log(btn)
     return (
         <div>
             <div className="carousel_home">

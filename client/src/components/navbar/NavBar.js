@@ -21,7 +21,7 @@ export default function NavBar() {
                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
-                        <Form inline className="d-flex">
+                        <Form className="d-flex">
                             <FormControl type="text" placeholder="Tìm kiếm sản phẩm..." className="mr-sm-2" />
                             <Button variant="outline-success">
                                 <i className="fas fa-search"></i>

@@ -9,9 +9,7 @@ export default function ItemCard() {
                 <Card.Body>
                     <Card.Title>Áo len nam CARCN201</Card.Title>
                     <Card.Text className="cost">
-                        <center>
                             580.000<sup>₫</sup>
-                        </center>
                     </Card.Text>
                 </Card.Body>
             </Card>
