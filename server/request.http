@@ -1,0 +1,55 @@
+# Nhận sản phẩm
+
+GET http://localhost:3000/api/products
+
+###
+# Tạo sản phẩm
+
+POST  http://localhost:3000/api/products
+Content-type: application/json
+
+{
+    "name":"Áo sơ mi trắng",
+    "description":"Thiết kế sang trọng cho nam giới",
+    "imageUrl":"https://aoxuanhe.com/upload/product/axh-095/ao-so-mi-nam-cong-so-trang-dep.jpg"
+}
+
+###
+
+#Cập nhật sản phẩm
+
+PUT http://localhost:3000/api/products/619fa9fd30405b9aa309082d
+Content-type: application/json
+
+{
+    "name":"Quần bò",
+    "description":"Thiết kế sang trọng cho nam giới",
+    "imageUrl":"https://aoxuanhe.com/upload/product/axh-095/ao-so-mi-nam-cong-so-trang-dep.jpg"
+}
+
+###
+# Xóa sản phẩm
+DELETE http://localhost:3000/api/products/619faa03d361a1a33d1954ee
+
+
+# -------------------------Tài khoản-----------------------
+
+###
+# Đăng kí
+POST http://localhost:3000/api/account/register
+Content-Type: application/json
+
+{
+    "username": "adminAT",
+    "password": "123456",
+    "level":"admin"
+}
+###
+# Đăng nhập
+POST http://localhost:3000/api/account/login
+Content-Type: application/json
+
+{
+    "username": "adminAT",
+    "password": "123456"
+}
