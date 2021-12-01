@@ -1,0 +1,6 @@
+.feedback_btn{
+    position: fixed;
+    left: 0;
+    top:40%;
+    transform: rotate(-90deg) translateY(-100%);
+}

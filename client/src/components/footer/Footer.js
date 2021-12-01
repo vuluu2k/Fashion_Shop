@@ -16,6 +16,10 @@ export default function Footer() {
                     <InforFooter/>
                 </Container>
             </div>
+            <hr />
+            <div className="copyright">
+                Copyright © 2021 VuLuu-HaUi
+            </div>
         </div>
     )
 }

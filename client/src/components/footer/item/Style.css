@@ -1,5 +1,26 @@
 
 .title_infor_footer{
     font-weight: 600;
-    font-size:22px;
+    font-size:20px;
+    margin: 10px 0;
+}
+.responsive_contact{
+    padding:20px 0;
+    /* flex-direction:column; */
+}
+@media screen and (max-width:995px){
+    .responsive_contact{
+        /* padding:20px 0; */
+        flex-direction:column;
+    }
+    .w_100{
+        width: 100%;
+        margin: 5px 0;
+    }
+    .w_80{
+        width: 80%;
+    }
+    .w_20{
+        width: 20%;
+    }
 }

@@ -1,5 +1,8 @@
 .contact{
     background-color: #f3f3f3;
-    height:60px;
-    line-height:60px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
 }
