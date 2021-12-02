@@ -1,0 +1,49 @@
+.item_mood{
+    cursor: pointer;
+    position: relative;
+    font-size: 25px;
+}
+.item_mood_text{
+    position: absolute;
+    font-size:16px;
+    display: none;
+}
+.feedback_form_components {
+    width: 300px;
+    height:200px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.2);
+    background-color:#ffff;
+    position: relative;
+}
+.feedback_title{
+    text-align: center;
+    padding: 20px 0px;
+    font-size:18px;
+}
+.item_mood:hover .item_mood_text{
+    display: block;
+    animation-name: aim_icon_mood;
+    animation-duration: 1s;
+}
+.close_btn{
+    cursor: pointer;
+    width:30px;
+    height:30px;
+    font-size:20px;
+    color:#fff;
+    position: absolute;
+    right:20px;
+    top:-15px;
+    border-radius:50%;
+    background-color:#000;
+}
+@keyframes aim_icon_mood {
+    from {
+        transform: translateY(35px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

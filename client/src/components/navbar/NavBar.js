@@ -1,18 +1,18 @@
 import React from 'react'
 import {Navbar,Nav,NavDropdown,Form,FormControl,Button} from 'react-bootstrap'
-
+import {Link} from 'react-router-dom'
 export default function NavBar() {
     return (
         <div>
             <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#home">
+                <Navbar.Brand to="/" as={Link}>
                     <img src="https://360boutique.vn/wp-content/uploads/2021/10/LOGO-360-DUNG-TAM-THOI-MAU-DEN-05.png" alt="" width="60" height="50" />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#home">Trang chủ</Nav.Link>
-                        <Nav.Link href="#link">Sản phẩm</Nav.Link>
+                        <Nav.Link to="/" as={Link}>Trang chủ</Nav.Link>
+                        <Nav.Link to="/product" as={Link}>Sản phẩm</Nav.Link>
                         <NavDropdown title="Danh mục" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>

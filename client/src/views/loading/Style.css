@@ -4,3 +4,19 @@
     top:40%;
     transform: rotate(-90deg) translateY(-100%);
 }
+.feedback_form{
+    position: fixed;
+    left: 3%;
+    top:32%;
+    animation: feedback_transform 0.5s;
+}
+@keyframes feedback_transform {
+    from{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
